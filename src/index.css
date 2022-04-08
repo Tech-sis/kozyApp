@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap');
+body{
+  background: #ff5e1a;
+  font-family: 'Arvo', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-layout-header {
+  height: 80px;
+  padding: 10px 50px;
+  background-color: #682508;
+}
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background: white;
+}
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item>a,
+.ant-menu-dark .ant-menu-item>span>a {
+ color: black; 
+}
+.ant-menu-overflow {
+  justify-content: end;
+}
+.ant-input-group .ant-input {
+  margin-top: 16px;
+}
+.ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
+  margin-top: 16px;
+}
+.ant-menu-horizontal {
+    border-bottom: none;
+}
+.ant-menu {
+  background: #682508;
+  color: #ff5e1a;
+  font-size: 24px;
+}
+.ant-btn-primary {
+    color: #fff;
+    border-color: #682508;
+    background: #682508;
+}
+.ant-btn-lg {
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+}
+a {
+    color: unset;
+}
+
+@media screen and (min-width: 992px) {
+.ant-col-lg-offset-2 {
+  margin-left: 6.333333%;
+}
 }
