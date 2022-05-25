@@ -1,13 +1,14 @@
 @import 'antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap');
 body{
-  background: #ff5e1a;
+  /* background: #ff5e1a; */
+  background: #ffffff;
   font-family: 'Arvo', serif;
 }
 
 .ant-layout-header {
   height: 80px;
-  padding: 10px 50px;
+  padding: 15px 20px;
   background-color: #682508;
 }
 .ant-menu.ant-menu-dark,
@@ -50,6 +51,9 @@ body{
 }
 a {
     color: unset;
+}
+h3.ant-typography, .ant-typography h3 {
+    margin: 110px 0;
 }
 
 @media screen and (min-width: 992px) {

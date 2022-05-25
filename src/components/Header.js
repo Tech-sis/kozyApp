@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import { Layout, Menu, Input } from 'antd'
 import styles from '../styles/header.module.css'
+import { MenuOutlined } from '@ant-design/icons'
 
 const { Header } = Layout
 const { Search } = Input
@@ -13,9 +14,13 @@ const NavHeader = () => {
     <>
       <Header className="header">
         <div className={styles.logo}>
-          <h1>Oyeyemi Kosoko</h1>
+          <h1 className={styles.h1}>Oyeyemi Kosoko</h1>
         </div>
-        <Menu theme="light" mode="horizontal">
+        <Menu
+          theme="light"
+          mode="horizontal"
+          overflowedIndicator={<MenuOutlined />}
+        >
           <Menu.Item key="1">About</Menu.Item>
           <Menu.Item key="2">Money Diaries</Menu.Item>
           <Menu.Item key="3">Newsletter</Menu.Item>
